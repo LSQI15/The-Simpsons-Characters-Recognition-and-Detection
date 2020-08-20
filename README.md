@@ -1,5 +1,14 @@
 # The-Simpsons-Characters-Recognition-and-Detection
+
+#### Northwestern University 
+
+#### MSiA-432 Deep Learning
+
+#### Spring 2020
+
+
 Repository for MSiA-432 Deep Learning Course Project: The Simpsons Characters Recognition and Detection. 
+
 Detailed information about the project can be found in the report (https://github.com/LSQI15/The-Simpsons-Characters-Recognition-and-Detection/blob/master/Final%20Report.pdf)
 
 ## Project Background
