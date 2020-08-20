@@ -12,7 +12,6 @@ Image classification via Convolutional neural network plays a major role in imag
 
 <img src="https://github.com/LSQI15/The-Simpsons-Characters-Recognition-and-Detection/blob/master/Classification%20Result.png" width="600">
 
-
 The best classification model we found was Xception with the following model parameters
 
     Optimizer: Adam
@@ -42,6 +41,8 @@ In this model setting, we have the following contributions:
     
     3. Producing the output images with the predicted boxes and reporting classification metric
     performance mentioned in the result section.
+    
+<img src="https://github.com/LSQI15/The-Simpsons-Characters-Recognition-and-Detection/blob/master/Detection%20Accuracy%20of%20Characters.png" width="600">
 
 ## References:
 
