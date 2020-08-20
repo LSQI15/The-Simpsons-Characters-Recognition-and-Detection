@@ -10,6 +10,23 @@ The Simpsons Characters Data is a public data set created by Alexandre Attia. It
 ## Part 1: The Simpsons Characters Classification
 Image classification via Convolutional neural network plays a major role in image processing, since it uses multiple filters to learn intricated feature embeddings from the original pixel under convolutional layers and adopts pooling to summary a patch of image data to understand local features. Generally speaking, a deeper network can learn substantial discriminative features to classify the images when it has an appropriate structure of convolutional and pooling layers. The team adopted several CNN structures who are the top performers in the ImageNet competition each year, including vgg16, vgg19 and Xception. 
 
+<img src="https://github.com/LSQI15/The-Simpsons-Characters-Recognition-and-Detection/blob/master/Classification%20Result.png" width="600">
+
+
+The best classification model we found was Xception with the following model parameters
+
+    Optimizer: Adam
+    Augmentation: 
+        zoom_range=0.2
+        rotation_range=15
+        width_shift_range=0.2
+        height_shift_range=0.2
+        horizontal_flip=True
+        vertical_flip=False
+<img src="https://github.com/LSQI15/The-Simpsons-Characters-Recognition-and-Detection/blob/master/Loss%20Accuracy%20Curves.png" width="500">
+<img src="https://github.com/LSQI15/The-Simpsons-Characters-Recognition-and-Detection/blob/master/Confusion%20Matrix.png" width="500">
+
+
 ## Part 2: The Simpsons Characters Detection
 
 In addition to image classification, the team went a step further to implement object detection models such as the Faster R-CNN. The best performer is Faster R-CNN. It mainly consists of two parts: a region proposal network and a fast R-CNN. Region proposal network (RPN) is fully convolutional network that simultaneously predicts object bounds and objectness scores at each position. The high-quality region proposals, identified by RPN, are used by Fast R-CNN for detection. In the next step, RPN and Fast R- CNN are concatenated into a single network via shared the convolutional features, and finally generate the classification for each selected region.
